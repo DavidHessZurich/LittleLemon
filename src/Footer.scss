@@ -1,0 +1,17 @@
+footer{
+  border: 1px solid;
+  .logo {
+    width: 50%;
+    Float: left;
+    display:inline;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+  .copyright{
+   
+    Float: right;
+    display:inline;
+    padding-top: 10px;
+    margin-right: 20px;
+  }
+}

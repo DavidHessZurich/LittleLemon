@@ -1,5 +1,5 @@
 import React from "react";
-function Home(props) {
+function Menu(props) {
   return (
     <>
       <h1>{props.name}</h1>
@@ -8,4 +8,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default Menu;

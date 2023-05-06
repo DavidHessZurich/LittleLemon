@@ -5,13 +5,18 @@ footer{
     Float: left;
     display:inline;
     padding-top: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
   }
   .copyright{
-   
     Float: right;
     display:inline;
     padding-top: 10px;
     margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width:  600px) {
+  footer .logo {
+    display:none;
   }
 }

@@ -1,8 +1,19 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Reservation from './Reservation';
+import {initializeTimes, updateTimes} from './Main';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('Renders the Reservation heading', () => {
+    render(<Reservation availableTimes={[]} />);
+    const headingElement = screen.getByText("RESERVE A TABLE");
+    expect(headingElement).toBeInTheDocument();
+})
+
+test('initializeTimes', () => {
+  const test = initializeTimes()
+  expect(test).toEqual(["x","y"]);
+})
+
+test('updateTimes', () => {
+  const test = updateTimes()
+  expect(test).toEqual(["x","y","z"]);
+})

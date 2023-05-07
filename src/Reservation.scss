@@ -1,22 +1,17 @@
 .reservation-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 50% 1rem 0;
-}
-
-
-.reservation-title {
-  grid-column: 1 / -1;
-  grid-row: span 2;
-  border-bottom: 1px solid black;
+  grid-column-start: auto;
+  margin-bottom: 2rem;
+  label {
+    display: block;
+  }
 }
 
 @media only screen and (max-width:  600px) {
-  .reservation-title ~ div {
-    grid-column: 1 / -1;
-  }
   .reservation-container {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem 0 !important;
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 

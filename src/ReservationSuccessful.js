@@ -2,7 +2,10 @@ import React from "react";
 import './ReservationSuccessful.scss';
 function ReservationSuccessful() {
   return (
-   <p>Test</p>
+    <>
+      <h1>YOUR RESERVATION WAS SUCCESSFUL</h1>
+      <p>We are looking forward to see you!</p>
+    </>
   );
 }
 

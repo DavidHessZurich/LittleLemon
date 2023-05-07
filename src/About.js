@@ -3,7 +3,7 @@ function About(props) {
   return (
     <>
       <h1>{props.name}</h1>
-      <div class="aboutSection-container">
+      <div className="aboutSection-container">
         <div>
           <quote>We are a family owned Mediteranean restaurant, focused on traditional recipes served with a modern twist.<br /><br /></quote>
         </div>

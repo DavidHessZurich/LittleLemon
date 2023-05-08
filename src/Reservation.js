@@ -33,7 +33,7 @@ function Reservation(props) {
         temp.time = "";
         break;
       case 'time':
-        temp.time = event.target.value;
+        temp.time = event.target.value
         break;
       default:
     }
@@ -42,7 +42,7 @@ function Reservation(props) {
 
   const BookingTimes = (props)=>{
     return (
-      props.times.map((time) => {return <option>{time}</option>})
+      props.times.map((time) => {return <option key={time}>{time}</option>})
     )
   };
 
@@ -70,7 +70,7 @@ function Reservation(props) {
           </div>
           <div>
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time " required={true} value={formVariables.time} onChange={event => handleFormChange(event, 'time')}>
+            <select id="res-time" required={true} value={formVariables.time} onChange={event => handleFormChange(event, 'time')}>
                 <option value={""} disabled>Choose an option</option>
                 <BookingTimes times={props.availableTimes}/>
             </select>
@@ -89,7 +89,7 @@ function Reservation(props) {
             </select>
             </div>
         </div>
-          <input type="submit" {...submitButtonStatus} value="Make Your reservation" />
+          <input aria-label="book table" className="reservation-submitButton" type="submit" {...submitButtonStatus} value="Make your reservation" />
         </form>
     </>
   );

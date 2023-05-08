@@ -40,8 +40,8 @@ function Main() {
       <Route exact path="/" element={<Home name="THIS WEEKS SPECIALS"/>} />
       <Route exact path="/about" element={<About name="WELCOME TO LITTLE LEMON"/>} />
       <Route exact path="/menu" element={<Menu name="MENU"/>} />
-      <Route exact path="/reservations" element={<Reservation navigateTo={navigateTo} availableTimes={availableTimes} updateTimes={dispatch} submitReservation={submitReservation}/>} />
-      <Route exact path="/reservations/success" element={<ReservationSuccessful />} />
+      <Route exact path="/reservations" element={<Reservation availableTimes={availableTimes} updateTimes={dispatch} submitReservation={submitReservation}/>} />
+      <Route exact path="/reservations/success" element={<ReservationSuccessful navigateTo={navigateTo}/>} />
     </Routes>
     </main>
   );

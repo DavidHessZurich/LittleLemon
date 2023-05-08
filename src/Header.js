@@ -12,15 +12,20 @@ function Header({children}) {
       {children}
       {!location.pathname.includes("/reservations") ?
         <div className="header-container">
-          <h1>Little Lemon</h1>
-          <h2>Chicaco</h2>
-          {function linkButton() {
-            return (
-              <button className="header-reservationButton" onClick={() => navigate("/reservations")}>
-                Book a table
-              </button>
-            );
-          }()}
+          <div className="header-title">
+            <h1>Little Lemon</h1>
+            <h2>Chicaco</h2>
+            {function linkButton() {
+              return (
+                <button className="header-reservationButton" onClick={() => navigate("/reservations")}>
+                  Book a table
+                </button>
+              );
+            }()}
+          </div>
+          <div className="header-image">
+            <img src={require('./greekSalad.jpg')} alt=""/>
+          </div>
         </div>
         :''
       }

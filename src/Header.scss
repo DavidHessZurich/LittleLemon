@@ -1,5 +1,27 @@
 .header-container {
-  background-color: #a87e4e;
+  background-color: #000000;
+  display: flex;
+  justify-content:space-between;
+}
+
+.header-title {
+  color: #ffffff;
+  width: 30%;
+  min-width: 200px;
+}
+
+.header-image {
+  margin-top: 0.5rem;
+  width: 70%;
+  img {
+    width: 50%;
+  }
+ }
+
+@media only screen and (max-width:  600px) {
+  .header-image {
+    display: none;
+  }
 }
 
 .header-reservationButton {
@@ -15,7 +37,7 @@
   border-radius: 8px;
   cursor: pointer;
   &:hover {
-    background-color: #035555;
+    background-color: #5a8e5c;
   }
   &:active {
     background-color: #000000;

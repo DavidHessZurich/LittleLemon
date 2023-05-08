@@ -6,6 +6,51 @@
   label {
     display: block;
   }
+  > div{
+    margin-bottom: 0.5rem;
+  }
+  input, select {
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding: 0px 0px 0px 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    font-size: 1rem;
+  }
+  select {
+    cursor: pointer;
+  }
+}
+
+.reservation-submitButton {
+  background-color: #00ff24;
+  border: none;
+  color: #000000;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: #273a3a;
+  }
+  &:active {
+    background-color: #00ff24;
+    color: #000000;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #00ff24;
+    opacity: 30%;
+    color: #000000;
+  }
 }
 
 @media only screen and (max-width:  600px) {
@@ -14,6 +59,4 @@
     grid-template-columns: repeat(1, 1fr) !important;
   }
 }
-
-
 
